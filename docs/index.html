@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minecraft Keybind Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft Keybind Randomizer</h1>
+        <div class="button-container">
+            <button class="action-button" id="randomize-button">Randomize</button>
+            <button class="action-button" id="reset-button">Reset</button>
+        </div>
+
+        <h2>Movement</h2>
+        <div class="movement">
+            <label for="jump">Jump</label>
+            <span id="jump" class="keybind">Space</span>
+        </div>
+        <div class="movement">
+            <label for="sneak">Sneak</label>
+            <span id="sneak" class="keybind">Left Shift</span>
+        </div>
+        <div class="movement">
+            <label for="sprint">Sprint</label>
+            <span id="sprint" class="keybind">Left Control</span>
+        </div>
+        <div class="movement">
+            <label for="left">Strafe Left</label>
+            <span id="left" class="keybind">A</span>
+        </div>
+        <div class="movement">
+            <label for="right">Strafe Right</label>
+            <span id="right" class="keybind">D</span>
+        </div>
+        <div class="movement">
+            <label for="backward">Walk Backwards</label>
+            <span id="backward" class="keybind">S</span>
+        </div>
+        <div class="movement">
+            <label for="forward">Walk Forwards</label>
+            <span id="forward" class="keybind">W</span>
+        </div>
+
+        <h2>Gameplay</h2>
+        <div class="gameplay">
+            <label for="attackdestroy">Attack/Destroy</label>
+            <span id="attackdestroy" class="keybind">Left Button</span>
+        </div>
+        <div class="gameplay">
+            <label for="pickblock">Pick Block</label>
+            <span id="pickblock" class="keybind">Middle Button</span>
+        </div>
+        <div class="gameplay">
+            <label for="useitem">Use Item/Place Block</label>
+            <span id="useitem" class="keybind">Right Button</span>
+        </div>
+
+        <h2>Inventory</h2>
+        <div class="inventory">
+            <label for="drop">Drop Selected Item</label>
+            <span id="drop" class="keybind">Q</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar1">Hotbar Slot 1</label>
+            <span id="hotbar1" class="keybind">1</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar2">Hotbar Slot 2</label>
+            <span id="hotbar2" class="keybind">2</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar3">Hotbar Slot 3</label>
+            <span id="hotbar3" class="keybind">3</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar4">Hotbar Slot 4</label>
+            <span id="hotbar4" class="keybind">4</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar5">Hotbar Slot 5</label>
+            <span id="hotbar5" class="keybind">5</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar6">Hotbar Slot 6</label>
+            <span id="hotbar6" class="keybind">6</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar7">Hotbar Slot 7</label>
+            <span id="hotbar7" class="keybind">7</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar8">Hotbar Slot 8</label>
+            <span id="hotbar8" class="keybind">8</span>
+        </div>
+        <div class="inventory">
+            <label for="hotbar9">Hotbar Slot 9</label>
+            <span id="hotbar9" class="keybind">9</span>
+        </div>
+        <div class="inventory">
+            <label for="opencloseinv">Open/Close Inventory</label>
+            <span id="opencloseinv" class="keybind">E</span>
+        </div>
+        <div class="inventory">
+            <label for="swap">Swap Item With Off Hand</label>
+            <span id="swap" class="keybind">F</span>
+        </div>
+
+        <h2>Creative Mode</h2>
+        <div class="creative">
+            <label for="loadhotbar">Load Hotbar Activator</label>
+            <span id="loadhotbar" class="keybind">X</span>
+        </div>
+        <div class="creative">
+            <label for="savehotbar">Save Hotbar Activator</label>
+            <span id="savehotbar" class="keybind">C</span>
+        </div>
+
+        <h2>Multiplayer</h2>
+        <div class="multiplayer">
+            <label for="listplayers">List Players</label>
+            <span id="listplayers" class="keybind">Tab</span>
+        </div>
+        <div class="multiplayer">
+            <label for="chat">Open Chat</label>
+            <span id="chat" class="keybind">T</span>
+        </div>
+        <div class="multiplayer">
+            <label for="command">Open Command</label>
+            <span id="command" class="keybind">-</span>
+        </div>
+        <div class="multiplayer">
+            <label for="social">Social Interactions Screen</label>
+            <span id="social" class="keybind">P</span>
+        </div>
+
+        <h2>Miscellaneous</h2>
+        <div class="misc">
+            <label for="advancements">Advancements</label>
+            <span id="advancements" class="keybind">L</span>
+        </div>
+        <div class="misc">
+            <label for="highlight">Highlight Players (Spectators)</label>
+            <span id="highlight" class="keybind">Not Bound</span>
+        </div>
+        <div class="misc">
+            <label for="screenshot">Take Screenshot</label>
+            <span id="screenshot" class="keybind">F2</span>
+        </div>
+        <div class="misc">
+            <label for="cinematic">Toggle Cinematic Camera</label>
+            <span id="cinematic" class="keybind">Not Bound</span>
+        </div>
+        <div class="misc">
+            <label for="fullscreen">Toggle Fullscreen</label>
+            <span id="fullscreen" class="keybind">F11</span>
+        </div>
+        <div class="misc">
+            <label for="perspective">Toggle Perspective</label>
+            <span id="perspective" class="keybind">F5</span>
+        </div>
+    </div>
+    <audio id="randomize-sound" src="sounds/click.mp3"></audio>
+    <script src="script.js"></script>
+
+    <div class="socialcontainer">
+        <a href="https://github.com/vest1k" target="_blank">GitHub</a>
+        <a href="https://www.youtube.com/@LordVestik" target="_blank">YouTube</a>
+        <a href="https://gamejolt.com/@vestik" target="_blank">GameJolt</a>
+        </div>
+</body>
+</html>

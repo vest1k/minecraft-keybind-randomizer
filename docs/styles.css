@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url('fonts/MinecraftFont.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MinecraftFont', Arial, sans-serif;
+    background-image: url('background/dirt.png');
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-image: url('textures/button.jpg');
+    background-color: #a0a0a0;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'MinecraftFont';
+    text-align: center;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}
+
+.movement, .gameplay, .inventory, .creative, .multiplayer, .misc {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.keybind {
+    background-image: url('textures/button.jpg');
+    background-size: cover;
+    background-color: #a0a0a0;
+    border: 1px solid #000000;
+    border-radius: 0;
+    padding: 4px 8px;
+    font-family: 'MinecraftFont';
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.keybind:hover {
+    border-color: #ffffff
+}
+
+.socialcontainer {
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+   }
